@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.boyce.ai</groupId>
+    <artifactId>ai-demo</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>AI Demo</name>
+    <description>AI Demo for Java</description>
+    <url>https://github.com/BoyceOne/ai-demo</url>
+    <modules>
+        <module>alibaba-ai-demo</module>
+    </modules>
+
+</project>
