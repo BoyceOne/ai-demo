@@ -12,9 +12,6 @@ import java.util.List;
 @Data
 public class ChatDto implements Serializable {
 
-
-    //{"chats":[{"role":"user","content":"dd"},{"role":"user","content":"dd"}]}
-
     private List<Msg> chats;
 
     @Data
