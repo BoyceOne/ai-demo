@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 /**
  * @author by Boyce
@@ -24,10 +23,14 @@ public class ChatController {
     @PostMapping("/simple")
     public ChatDto.Msg completion(@RequestBody ChatDto.Msg msg) {
 
+        log.info("接收到消息:{}",msg.getContent());
+
         String res = chatService.completion(msg.getContent());
         ChatDto.Msg rntMsg = new ChatDto.Msg();
         rntMsg.setContent(res);
-        rntMsg.setRole("rr");
+        rntMsg.setRole("ASSISTANT");
+
+        log.info("返回消息:{}",res);
 
         return rntMsg;
     }
